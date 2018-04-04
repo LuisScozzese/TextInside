@@ -10,12 +10,6 @@ f_error() {
 	sleep 2
 	f_main
 }
-f_imagen(){
-	echo -e "\e[1;32mElija o descargue cualquier imagen con formato .JPG\e[0m"
-	echo -e "\e[1;32my renombrela como 'imagen.jpg' para que la herramienta funcione correctamente\e[0m"
-	sleep 10
-	f_main
-	
 
 }
 f_instalar(){
@@ -29,11 +23,11 @@ f_instalar(){
 	f_main
 }
 f_instrucciones(){
-	echo -e "\e[1;36mEsta herramienta esta hecha con fines educativos"
+	echo -e "\e[1;36m"
 	echo -e "cabe destacar que tanto la imagen como el .txt tienen"
 	echo -e "que estar en el escritorio para que funcione, y que al insertar"
-	echo -e "y descifrar les pedira una clave que elegiran ustedes o el que le"
-	echo -e "envie la imagen.\e[0m"
+	echo -e "y decifrar les pedira una clave que elegiran"
+	echo -e "\e[0m"
 	sleep 15
 }
 f_mensaje(){
@@ -47,7 +41,7 @@ f_mensaje(){
 }
 f_salir(){
 	echo
-	echo -e "\e[1;36mNOS VEMOS!\e[0m"
+	echo -e "\e[1;36mADIOS!\e[0m"
 	exit
 
 }
@@ -109,16 +103,14 @@ echo -e "\e[1;36m QUÉ OPCIÓN DESEA EJECUTAR\e[0m"
 echo
 
 echo -e "\e[1;37m[01] INSTALAR LA HERRAMIENTA STEGHIDE"
-echo
-echo -e "[02] INSTRUCCIONES IMAGEN"
 echo 
-echo -e "[03] CREAR UN MENSAJE"
+echo -e "[03] CREAR MENSAJE"
 echo
-echo -e "[04] INSERTAR EL MENSAJE EN UNA IMAGEN"
+echo -e "[04] INSERTAR MENSAJE EN IMAGEN"
 echo
-echo -e "[05] DESCIFRAR EL MENSAJE DE UNA IMAGEN"
+echo -e "[05] DECIFRAR MENSAJE EN IMAGEN"
 echo
-echo -e "[06] INSTRUCCIONES"
+echo -e "[06] AYUDA"
 echo
 echo -e "[07] SALIR\e[0m"
 echo
@@ -132,18 +124,15 @@ case $OPCION in
 		f_imagen
 		;;
 	3)
-		f_mensaje
-		;;
-	4)
 		f_insertar
 		;;
-	5)
+	4)
 		f_descifrar
 		;;
-	6)
+	5)
 		f_instrucciones
 		;;
-	7)
+	6)
 		f_salir
 		;;
 	*)
