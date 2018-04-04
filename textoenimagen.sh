@@ -11,7 +11,7 @@ f_error() {
 	f_main
 }
 
-}
+
 f_instalar(){
 	echo -e "\e[1;32mLa herramienta se esta instalando\e[0m"
 	echo -e "\e[1;31m" 
