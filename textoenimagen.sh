@@ -104,15 +104,15 @@ echo
 
 echo -e "\e[1;37m[01] INSTALAR LA HERRAMIENTA STEGHIDE"
 echo 
-echo -e "[03] CREAR MENSAJE"
+echo -e "[02] CREAR MENSAJE"
 echo
-echo -e "[04] INSERTAR MENSAJE EN IMAGEN"
+echo -e "[03] INSERTAR MENSAJE EN IMAGEN"
 echo
-echo -e "[05] DECIFRAR MENSAJE EN IMAGEN"
+echo -e "[04] DECIFRAR MENSAJE EN IMAGEN"
 echo
-echo -e "[06] AYUDA"
+echo -e "[05] AYUDA"
 echo
-echo -e "[07] SALIR\e[0m"
+echo -e "[06] SALIR\e[0m"
 echo
 read OPCION
 
@@ -121,7 +121,7 @@ case $OPCION in
 		f_instalar
 		;;
 	2)
-		f_imagen
+		f_mensaje
 		;;
 	3)
 		f_insertar
